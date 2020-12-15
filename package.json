@@ -12,7 +12,8 @@
     "initdatabase": "nodetouch database.sqlite",
     "build": "npm run initdatabase && npm run migrate:latest",
     "seed:make": "knex seed:make",
-    "seed:run": "knex seed:run"
+    "seed:run": "knex seed:run",
+    "start:with-demo-data": "npm run seed:run && npm run start"
   },
   "lint-staged": {
     "src/**/*.js": [
